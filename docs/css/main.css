@@ -422,6 +422,7 @@ button {
   text-align: center;
   margin-right: 25px;
   margin-bottom: 45px;
+  cursor: pointer;
 }
 .card:last-child {
   margin-right: 0;
@@ -515,6 +516,7 @@ button {
 .footer h2,
 p {
   color: #faf8f0;
+  cursor: pointer;
 }
 .footer-nav {
   display: -webkit-box;
