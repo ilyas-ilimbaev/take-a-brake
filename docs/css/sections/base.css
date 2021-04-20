@@ -1,0 +1,149 @@
+:root {
+  --text: #000;
+  --red: #ea736d;
+  --yellow: #fbdc4d;
+  --blueLineColor: #039be5;
+  --btnBg: #fbdc4d;
+  --btnBgHov: #ffd200;
+  --btnBgAct: #e1bc10;
+  --BtnContacts: #464646;
+  --BtnContactsHov: #797979;
+  --BtnContactsAct: #181818;
+  --fontFam: 'mplus1p', sans-serif;
+}
+html {
+  scroll-behavior: auto;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #000;
+  min-width: 320px;
+  background-color: #faf8f0;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+svg {
+  max-width: 100%;
+}
+button,
+textarea,
+input {
+  outline: none;
+}
+input[type="radio"],
+input[type="checkbox"],
+input[type="submit"] {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+textarea {
+  resize: none;
+}
+button {
+  display: inline-block;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+}
+.container {
+  width: 100%;
+  max-width: 320px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 760px) {
+  .container {
+    max-width: 700px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 738px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container {
+    padding: 0;
+    max-width: 1140px;
+  }
+}
+.header__container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  margin-bottom: 34px;
+}
+@media only screen and (min-width: 760px) {
+  .header__container {
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .header__container {
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .header__container {
+    margin-bottom: 147px;
+    max-width: 1430px;
+  }
+}
+.title-1,
+.title-2 {
+  display: inline-block;
+  line-height: 1;
+}
+.title-1 {
+  font-size: 25px;
+  color: #778e7e;
+  font-weight: 600;
+}
+.title-2 {
+  font-size: 22px;
+  color: #778e7e;
+  font-weight: 600;
+}
+.header::after,
+.about::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 38%;
+  height: 2px;
+  background-color: #778e7e;
+}

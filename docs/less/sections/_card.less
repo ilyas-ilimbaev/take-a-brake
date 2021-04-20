@@ -1,0 +1,84 @@
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card {
+    width: 300px;
+    text-align: center;
+    margin-right: 25px;
+    margin-bottom: 45px;
+}
+.card:last-child {
+    margin-right: 0;
+}
+.card-name {
+    font-size: 22px;
+    color: #778e7e;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.card-price {
+    color: #000;
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.card-button {
+    display: inline-block;
+    padding: 8px 45px;
+    border: 1px solid #778e7e;
+    border-radius: 35px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1;
+    background-color: #778e7e;    
+}
+.card-button:hover {
+    background-color: #5d6380;
+}
+.money-sign {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 24px;
+    background-image: url(../img/menu/money.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    right: -3%;
+    top: 5px;
+    transform: translateX(10%);
+}
+.block-cards {
+    position: relative;
+    margin-bottom: 60px;
+    padding-bottom: 60px;
+}
+.block-cards::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 38%;
+    height: 2px;
+    background-color: #778e7e;
+}
+.block-cards:nth-child(2n+1)::after {
+    left: auto;
+    right: 0;
+}
+.block-cards:last-child {
+    margin-bottom: 0;
+}
+.block-cards:last-child::after {
+    display: none;
+}
+.block-cards p {
+    font-size: 18px;
+    color: #778e7e;
+    font-weight: 400;
+    margin-bottom: 25px;
+}

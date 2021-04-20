@@ -1,0 +1,116 @@
+.header {
+    position: relative;
+    padding-top: 60px;
+    height: 600px;
+    margin-bottom: 150px;
+}
+.header::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 800px;
+    background-image: url(../img/header/layout.png);
+    background-position: right;
+    background-repeat: round;
+    background-size: contain;
+    z-index: -1;
+}
+.nav {
+    display: flex;
+    justify-content: end;
+}
+.nav-link {
+    position: relative;
+    margin-right: 25px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 66px;
+}
+.nav-link:last-child {
+    margin-right: 0;
+}
+.nav-link {
+    &::after {
+        left: 50%;
+    }
+    &::before {
+        right: 50%;
+    }
+    &:hover::after {
+        width: 50%;
+    }
+    &:hover::before {
+        width: 50%;
+    }
+}
+
+.nav-link::after, .nav-link::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition: .5s;
+}
+.header-logo-block {
+    display: inline-flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.header__title-logo {
+    font-family: 'Itim', cursive;
+    font-size: 55px;
+    color: #778e7e;
+}
+.header-logo {
+    width: 150px;
+}
+.header-nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.header-desc {
+    width: 550px;
+    text-align: left;
+    margin: 0 auto;
+}
+.header-desc h2 {
+    margin-top: 20px;
+}
+.header-desc p, .about-desc p {
+    font-size: 18px;
+    color: #778e7e;
+    font-weight: 400;
+    margin-top: 20px;
+}
+.header-center-info {
+    display: flex;
+    justify-content: space-between;
+}
+.header-info, .header-topical {
+    width: 50%;
+    text-align: center;
+}
+.topical-block-img {
+    width: 400px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 45px;
+}
+.topical-button {
+    color: #faf8f0;
+    display: inline-block;
+    padding: 9px 30px;
+    border: 2px solid #faf8f0;
+    font-size: 22px;
+    font-weight: 800;
+    border-radius: 20px;
+}
